@@ -34,13 +34,21 @@ let canvas = Canvas(width: 400, height: 400)
 // Draw slightly thicker lines
 canvas.defaultLineWidth = 4
 
-// Draw the vertical axis and label it
-canvas.drawLine(fromX: 0, fromY: -400, toX: 0, toY: 400)
-canvas.drawText(message: "y", size: 24, x: 10, y: 375)
+//// Draw the vertical axis and label it
+//canvas.drawLine(fromX: 0, fromY: -400, toX: 0, toY: 400)
+//canvas.drawText(message: "y", size: 24, x: 10, y: 375)
+//
+//// Draw the horizontal axis and label it 
+//canvas.drawLine(fromX: -400, fromY: 0, toX: 400, toY: 0)
+//canvas.drawText(message: "x", size: 24, x: 375, y: 10)
 
-// Draw the horizontal axis and label it 
-canvas.drawLine(fromX: -400, fromY: 0, toX: 400, toY: 0)
-canvas.drawText(message: "x", size: 24, x: 375, y: 10)
+// Draw the vertical axis and label it
+canvas.drawLine(fromX: 200, fromY: 0, toX: 200, toY: 400)
+canvas.drawText(message: "y", size: 24, x: 210, y: 375)
+
+// Draw the horizontal axis and label it
+canvas.drawLine(fromX: 0, fromY: 200, toX: 400, toY: 200)
+canvas.drawText(message: "x", size: 24, x: 375, y: 210)
 
 /*:
  ## Challenge 1
