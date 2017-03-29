@@ -21,7 +21,25 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 400, height: 400)
 
-// Replace this comment and add your code below
+canvas.translate(byX: 200, byY: 200)
+canvas.drawShapesWithBorders = false
+
+for x in stride(from: 1, to: 10, by: 1){
+    canvas.rotate(by: 20)
+    canvas.fillColor = Color(hue: x * 40, saturation: 70, brightness: 80, alpha: 80)
+    canvas.drawEllipse(centreX: 0, centreY: 0, width: 20, height: 360)
+}
+
+    canvas.rotate(by: 10)
+
+for y in stride(from: 1, to: 10, by: 1){
+    
+    canvas.rotate(by: 20)
+    canvas.fillColor = Color(hue: y * 40, saturation: 70, brightness: 80, alpha: 80)
+    canvas.drawEllipse(centreX: 0, centreY: 0, width: 20, height: 300)
+}
+
+
 
 /*:
  ## Template code
