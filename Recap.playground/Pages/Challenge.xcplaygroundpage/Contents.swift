@@ -26,8 +26,136 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 400, height: 400)
+canvas.drawShapesWithBorders = false
+canvas.defaultLineWidth = 8
 
-// Replace this comment and add your code below
+
+for y in stride(from: 0, through: 222, by: 220){
+
+//circles
+for x in stride(from: 0, through: 500, by: 64){
+    canvas.fillColor = Color.blue
+    canvas.drawEllipse(centreX: x, centreY: 50+y, width: 56, height: 56)
+    
+    canvas.fillColor = Color.black
+    canvas.drawEllipse(centreX: x, centreY: 50+y, width: 40, height: 40)
+    
+    canvas.fillColor = Color.red
+    canvas.drawEllipse(centreX: x, centreY: 50+y, width: 24, height: 24)
+
+    canvas.fillColor = Color.white
+    canvas.drawEllipse(centreX: x, centreY: 50+y, width: 8, height: 8)
+    
+}
+
+
+for x in stride(from: 32, through: 500, by: 64){
+    canvas.fillColor = Color.red
+    canvas.drawEllipse(centreX: x, centreY: 95+y, width: 56, height: 56)
+    
+    canvas.fillColor = Color.black
+    canvas.drawEllipse(centreX: x, centreY: 95+y, width: 40, height: 40)
+    
+    canvas.fillColor = Color.blue
+    canvas.drawEllipse(centreX: x, centreY: 95+y, width: 24, height: 24)
+    
+    canvas.fillColor = Color.white
+    canvas.drawEllipse(centreX: x, centreY: 95+y, width: 8, height: 8)
+    
+}
+
+//lines
+for x in stride(from: 0, to: 500, by: 64){
+    
+    canvas.lineColor = Color.white
+    canvas.drawLine(fromX: x, fromY: 55+y , toX: x, toY: 90+y)
+    canvas.drawLine(fromX: x+32, fromY: 55+y, toX: x+32, toY: 90+y)
+    
+    canvas.lineColor = Color.red
+    canvas.drawLine(fromX: x-8, fromY: 55+y, toX: x-8, toY: 90+y)
+    canvas.drawLine(fromX: x+8, fromY: 55+y, toX: x+8, toY: 90+y)
+    
+    
+    canvas.lineColor = Color.black
+    canvas.drawLine(fromX: x-16, fromY: 55+y, toX: x-16, toY: 90+y)
+    canvas.drawLine(fromX: x+16, fromY: 55+y, toX: x+16, toY: 90+y)
+    
+    
+    canvas.lineColor = Color.blue
+    canvas.drawLine(fromX: x-24, fromY: 55+y, toX: x-24, toY: 90+y)
+    canvas.drawLine(fromX: x+24, fromY: 55+y, toX: x+24, toY: 90+y)
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//circles
+for x in stride(from: 0, through: 500, by: 64){
+    canvas.fillColor = Color.blue
+    canvas.drawEllipse(centreX: x, centreY: 200, width: 56, height: 56)
+    
+    canvas.fillColor = Color.black
+    canvas.drawEllipse(centreX: x, centreY: 200, width: 40, height: 40)
+    
+    canvas.fillColor = Color.red
+    canvas.drawEllipse(centreX: x, centreY: 200, width: 24, height: 24)
+    
+    canvas.fillColor = Color.white
+    canvas.drawEllipse(centreX: x, centreY: 200, width: 8, height: 8)
+    
+}
+
+
+for x in stride(from: 32, through: 500, by: 64){
+    canvas.fillColor = Color.red
+    canvas.drawEllipse(centreX: x, centreY: 155, width: 56, height: 56)
+    
+    canvas.fillColor = Color.black
+    canvas.drawEllipse(centreX: x, centreY: 155, width: 40, height: 40)
+    
+    canvas.fillColor = Color.blue
+    canvas.drawEllipse(centreX: x, centreY: 155, width: 24, height: 24)
+    
+    canvas.fillColor = Color.white
+    canvas.drawEllipse(centreX: x, centreY: 155, width: 8, height: 8)
+    
+}
+
+//lines
+for x in stride(from: 0, to: 500, by: 64){
+    
+    canvas.lineColor = Color.white
+    canvas.drawLine(fromX: x, fromY: 160, toX: x, toY: 195)
+    canvas.drawLine(fromX: x+32, fromY: 160, toX: x+32, toY: 195)
+    
+    canvas.lineColor = Color.red
+    canvas.drawLine(fromX: x-8, fromY: 160, toX: x-8, toY: 195)
+    canvas.drawLine(fromX: x+8, fromY: 160, toX: x+8, toY: 195)
+    
+    
+    canvas.lineColor = Color.black
+    canvas.drawLine(fromX: x-16, fromY: 160, toX: x-16, toY: 195)
+    canvas.drawLine(fromX: x+16, fromY: 160, toX: x+16, toY: 195)
+    
+    
+    canvas.lineColor = Color.blue
+    canvas.drawLine(fromX: x-24, fromY: 160, toX: x-24, toY: 195)
+    canvas.drawLine(fromX: x+24, fromY: 160, toX: x+24, toY: 195)
+}
+
+
 
 /*:
  ## Template code
